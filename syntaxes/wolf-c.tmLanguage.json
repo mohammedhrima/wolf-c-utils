@@ -1,0 +1,97 @@
+{
+  "scopeName": "source.wolf-c",
+  "fileTypes": ["w"],
+  "name": "Wolf-C",
+  "patterns": [
+    {
+      "match": "\\b(int|chars|char|array)\\b",
+      "name": "storage.type.wolf-c"
+    },
+    {
+      "match": "\\b(if|else|elif|while|return|switch|case|default)\\b",
+      "name": "keyword.control.wolf-c"
+    },
+    {
+      "match": "\\b(func|struct|imp)\\b",
+      "name": "keyword.declaration.wolf-c"
+    },
+    {
+      "match": "\\b\\d+\\b",
+      "name": "constant.numeric.wolf-c"
+    },
+    {
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b",
+      "name": "variable.other.wolf-c"
+    },
+    {
+      "match": "==|!=|<=|>=|<|>",
+      "name": "keyword.operator.comparison.wolf-c"
+    },
+    {
+      "match": "=",
+      "name": "keyword.operator.assignment.wolf-c"
+    },
+    {
+      "match": ":",
+      "name": "punctuation.separator.colon.wolf-c"
+    },
+    {
+      "match": "\\(",
+      "name": "punctuation.section.parens.begin.wolf-c"
+    },
+    {
+      "match": "\\)",
+      "name": "punctuation.section.parens.end.wolf-c"
+    },
+    {
+      "match": "\"(\\\\.|[^\"\\\\])*\"|'(\\\\.|[^'\\\\])*'",
+      "name": "string.quoted.wolf-c"
+    },
+    {
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\s*\\(",
+      "name": "entity.name.function.call.wolf-c"
+    },
+    {
+      "match": "//.*$",
+      "name": "comment.line.double-slash.wolf-c"
+    },
+    {
+      "match": "#.*$",
+      "name": "comment.line.hash.wolf-c"
+    },
+    {
+      "begin": "/\\*",
+      "end": "\\*/",
+      "name": "comment.block.wolf-c"
+    }
+  ],
+  "repository": {
+    "function-declaration": {
+      "patterns": [
+        {
+          "match": "\\bfunc\\s+\\w+\\s*\\(.*\\):",
+          "name": "entity.name.function.wolf-c"
+        }
+      ]
+    },
+    "struct-declaration": {
+      "patterns": [
+        {
+          "begin": "\\bstruct\\s+\\w+\\s*:",
+          "end": "(?=\\bend\\b)",
+          "name": "entity.name.struct.wolf-c",
+          "patterns": [
+            {
+              "match": "\\b(int|chars|char|array)\\b",
+              "name": "storage.type.wolf-c"
+            },
+            {
+              "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b",
+              "name": "variable.other.wolf-c"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
