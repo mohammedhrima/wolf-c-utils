@@ -3,7 +3,7 @@
   "displayName": "Wolf-C",
   "description": "Syntax highlighting, autocompletion, formatting, and linting for Wolf-C language",
   "version": "0.0.1",
-  "publisher": "your-name",
+  "publisher": "mohammedhrima",
   "engines": {
     "vscode": "^1.60.0"
   },
@@ -14,6 +14,14 @@
     "onLanguage:wolf-c"
   ],
   "main": "./out/extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohammedhrima/wolf-c-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mohammedhrima/wolf-c-utils/issues"
+  },
+  "homepage": "https://github.com/mohammedhrima/wolf-c-utils#readme",
   "contributes": {
     "languages": [
       {
@@ -46,7 +54,7 @@
     "@types/node": "^14.14.37",
     "@types/vscode": "^1.60.0",
     "typescript": "^4.4.3",
-    "vscode": "^1.1.37", 
-    "vsce": "^1.98.0" 
+    "vscode": "^1.1.37",
+    "vsce": "^1.98.0"
   }
 }
