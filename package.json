@@ -3,7 +3,7 @@
   "displayName": "Wolf-C",
   "description": "Syntax highlighting, autocompletion, formatting, and linting for Wolf-C language",
   "version": "0.0.1",
-  "publisher": "mohammedhrima",
+  "publisher": "wolfc",
   "engines": {
     "vscode": "^1.60.0"
   },
